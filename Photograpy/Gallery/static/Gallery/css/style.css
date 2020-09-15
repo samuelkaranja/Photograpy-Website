@@ -136,6 +136,42 @@ body{
     max-width: 100%;
 }
 
+/*............... Contact Us ..............*/
+
+.hr{
+    border-top: 1px solid #a7a9ab;
+    width: 100%;
+    margin-right: 100px;
+}
+
+.contact{
+    margin-left: 50px;
+}
+
+.contact-header{
+    margin-left: 15px;
+}
+
+.contact-header h3{
+    color: #a7a9ab;
+    font-weight: 500;
+}
+
+.contact-banner{
+    max-width: 900px;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.c_img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 425px) {
 
     .rw{
@@ -209,6 +245,19 @@ body{
     .photo{
         margin: 4px;
         height: 110px;
+    }
+
+    /*............ Contact Us .............*/
+
+    .contact{
+        margin-left: 0;
+    }
+
+    .contact-banner{
+        max-width: 700px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 70px;
     }
 }
 
