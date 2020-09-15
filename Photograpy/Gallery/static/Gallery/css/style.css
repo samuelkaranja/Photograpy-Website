@@ -145,6 +145,7 @@ body{
 }
 
 .contact{
+    margin-top: 70px;
     margin-left: 50px;
 }
 
@@ -152,16 +153,16 @@ body{
     margin-left: 15px;
 }
 
-.contact-header h3{
+.contact-header h2{
     color: #a7a9ab;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .contact-banner{
     max-width: 900px;
     height: 300px;
     margin-top: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 .c_img{
@@ -171,6 +172,12 @@ body{
     height: 100%;
     margin-top: 20px;
 }
+
+.form-control{
+    box-shadow: none !important;
+}
+
+/*.............. Media Queries ..............*/
 
 @media only screen and (max-width: 425px) {
 
