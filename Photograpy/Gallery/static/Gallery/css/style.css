@@ -11,20 +11,27 @@ body{
     padding: 0 !important;
 }
 
+.cn{
+    text-align: center;
+}
+
 .content-container{
     margin-top: 40px;
 }
+
+/*............. Vertical Navbar ..............*/
 
 .navbar.fixed-left {
     position: fixed;
     top: 40px;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 400px;
     height: 100%;
     flex-flow: column nowrap;
     align-items: flex-start;
     z-index: 1;
+    margin-left: 50px;
 }
 
 .navbar.fixed-left .navbar-collapse {
@@ -116,15 +123,12 @@ body{
 
 /*.............. Gallery .............*/
 
-.gallery{
-    text-align: center;
-}
-
 .photo{
     display: inline-block;
     margin: 6px;
     width: 300px;
     height: 300px;
+    justify-content: center;
 }
 
 .photo:hover{
@@ -134,6 +138,33 @@ body{
 .p_img{
     width: 100%;
     max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/*................ About ..............*/
+
+.about{
+    margin-top: 60px;
+}
+
+.about-header{
+    margin-left: 15px;
+}
+
+.about-header h3{
+    color: #a7a9ab;
+    font-weight: 600;
+}
+
+.b_img{
+    width: 300px;
+    height: 300px;
+}
+
+.contact-details{
+    display: inline-block;
 }
 
 /*............... Contact Us ..............*/
@@ -173,8 +204,32 @@ body{
     margin-top: 20px;
 }
 
+.sr{
+    color: red;
+    font-weight : 600;
+    padding-left: 3px;
+}
+
 .form-control{
     box-shadow: none !important;
+}
+
+.contact label{
+    font-size: 16px;
+    font-weight: 350;
+    color: #414042;
+}
+
+.contact ::placeholder{
+    color: #aaa;
+}
+
+.contact .bn{
+    border: none;
+    color: #fff;
+    background-color: #68b12f;
+    padding: 5px 30px;
+    border-radius: 4px;
 }
 
 /*.............. Media Queries ..............*/
@@ -193,6 +248,7 @@ body{
         top: 0 !important;
         width: auto;
         position: sticky;
+        margin-left: 0;
     }
 
     .navbar-toggler{
@@ -271,3 +327,32 @@ body{
 @media only screen and (max-width: 768px) and (min-width: 425px) {
     
 }
+
+@media screen and (min-width: 768px) {
+
+    .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+        display: block;
+    }
+
+    .dropdown-menu{
+        margin-top: 0;
+        background-color: transparent;
+    }
+
+    .dropdown-menu .dropdown-item{
+        color: #000000;
+    }
+
+    .dropdown-item:hover{
+        background-color: lightgrey;
+    }
+
+    .dropdown-toggle{
+        margin-bottom: 2px;
+    }
+
+    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+        margin-bottom: 0;
+    }
+
+  }

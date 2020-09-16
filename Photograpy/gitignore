@@ -1,0 +1,12 @@
+.venv
+venv/
+ENV/
+.vscode
+.DS_Store
+*.sqlite3
+media/
+*.pyc
+*.db
+*.pid
+*.log
+local_settings.py

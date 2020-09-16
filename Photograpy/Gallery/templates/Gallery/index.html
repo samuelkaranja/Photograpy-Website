@@ -3,61 +3,11 @@
 {% load static %}
 
 {% block content %}
-<div class="content-container">
-	<div class="gallery">
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
+	<div class="content-container cn">
+		{% for img in image %}
+			<div class="col-3 col-md-3 cl photo">
+				<a href="#"><img class="p_img" src="{{ img.image.url }}"></a>
+			</div>
+		{% endfor %}
 	</div>
-
-	<div class="gallery">
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-	</div>
-
-	<div class="gallery">
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-	</div>
-
-	<div class="gallery">
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-
-		<div class="col-3 col-md-3 cl photo">
-			<a href="#"><img class="p_img" src="{% static 'Gallery/image/team-2.jpg' %}"></a>
-		</div>
-	</div>
-</div>
 {% endblock %}
