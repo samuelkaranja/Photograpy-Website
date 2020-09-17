@@ -125,7 +125,7 @@ body{
 
 .photo{
     display: inline-block;
-    margin: 6px;
+    margin: 6px 4px;
     width: 300px;
     height: 300px;
     justify-content: center;
@@ -310,6 +310,8 @@ body{
         height: 110px;
     }
 
+    /*................ Image ...............*/
+
     /*............ Contact Us .............*/
 
     .contact{
@@ -336,7 +338,6 @@ body{
 
     .dropdown-menu{
         margin-top: 0;
-        background-color: transparent;
     }
 
     .dropdown-menu .dropdown-item{

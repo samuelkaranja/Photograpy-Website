@@ -11,6 +11,9 @@ def Index(request):
 	
 	return render(request, 'Gallery/index.html', {'image' : image})
 
+def Image(request):
+	return render(request, 'Gallery/image.html')
+
 def About(request):
 	return render(request, 'Gallery/about.html')
 
