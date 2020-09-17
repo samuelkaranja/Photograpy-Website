@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Gallery.urls')),
+    path('', include('Wedding.urls')),
 ]
 
 if settings.DEBUG:
