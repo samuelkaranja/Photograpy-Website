@@ -12,7 +12,9 @@ def Index(request):
 	return render(request, 'Gallery/index.html', {'image' : image})
 
 def Image(request):
-	return render(request, 'Gallery/image.html')
+	image = Gallery.objects.all()
+
+	return render(request, 'Gallery/image.html', {'image' : image})
 
 def About(request):
 	return render(request, 'Gallery/about.html')
