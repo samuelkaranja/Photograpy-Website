@@ -6,9 +6,9 @@
     <div class="slider">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-                {% for img in image %}
-                    <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
-                        <img src="{{ img.image.url }}" class="d-block img-fluid" alt="...">
+                {% for img in photo %}
+                    <div class="carousel-item {% if img.id == pk %} active {% endif %}">
+                        <img src="{{ img.image.url }}" class="d-block img-fluid" alt="">
                     </div>
                 {% endfor %}
             </div>

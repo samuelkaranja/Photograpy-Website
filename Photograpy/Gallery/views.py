@@ -11,10 +11,14 @@ def Index(request):
 	
 	return render(request, 'Gallery/index.html', {'image' : image})
 
-def Image(request):
-	image = Gallery.objects.all()
+def Image(request, pk):
+	spec = Gallery.objects.filter(pk=pk)
 
-	return render(request, 'Gallery/image.html', {'image' : image})
+	slide = Gallery.objects.all()
+
+	photo = spec | slide
+
+	return render(request, 'Gallery/image.html', {'photo' : photo, 'pk': pk})
 
 def About(request):
 	return render(request, 'Gallery/about.html')
