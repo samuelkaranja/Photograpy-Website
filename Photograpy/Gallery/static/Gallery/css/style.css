@@ -29,7 +29,7 @@ body{
 .navbar.fixed-left {
     position: fixed;
     top: 40px;
-    left: 80px;
+    left: 150px;
     bottom: 0;
     width: 200px;
     height: 100%;
@@ -349,7 +349,11 @@ body{
         height: 110px;
     }
 
-    /*................ Image ...............*/
+    /*................ Carousel ...............*/
+
+    .carousel-inner .carousel-item img {
+        height: auto;
+    }
 
     /*............ Contact Us .............*/
 
