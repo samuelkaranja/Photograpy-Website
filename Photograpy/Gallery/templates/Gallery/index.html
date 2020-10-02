@@ -5,7 +5,7 @@
 {% block content %}
 	<div class="content-container cn">
 		{% for img in image %}
-			<div class="col-md-3  cl photo">
+			<div class="col-md-3 cl photo">
 				<a href="{% url 'image' img.id %}"><img class="p_img" src="{{ img.image.url }}"></a>
 			</div>
 		{% endfor %}

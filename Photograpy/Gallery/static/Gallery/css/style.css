@@ -15,10 +15,6 @@ body{
     text-align: center;
 }
 
-/*.ab{
-    margin-left: 100px;
-}
-*/
 .content-container{
     margin-top: 50px;
 }
@@ -281,9 +277,9 @@ body{
         margin: 0 !important;
     }
 
-    /*.cn{
+    .cn{
         text-align: center;
-    }*/
+    }
 
     .navbar{
         padding: 50px 0 0 0;
@@ -402,7 +398,11 @@ body{
     
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .navbar.fixed-left {
+        left: 10px;
+    }
 
     .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
         display: block;
@@ -428,4 +428,10 @@ body{
         margin-bottom: 0;
     }
 
+    /*............ Gallery ............*/
+
+    .photo {
+        width: 150px; 
+        height: 150px;
+    }
   }
