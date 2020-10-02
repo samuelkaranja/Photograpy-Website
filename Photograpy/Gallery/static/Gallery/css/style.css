@@ -15,10 +15,10 @@ body{
     text-align: center;
 }
 
-.ab{
+/*.ab{
     margin-left: 100px;
 }
-
+*/
 .content-container{
     margin-top: 50px;
 }
@@ -29,7 +29,7 @@ body{
 .navbar.fixed-left {
     position: fixed;
     top: 40px;
-    left: 150px;
+    left: 100px;
     bottom: 0;
     width: 200px;
     height: 100%;
@@ -188,14 +188,20 @@ body{
     margin-left: 15px;
 }
 
-.about-header h3{
+.about h3{
     color: #a7a9ab;
     font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about p{
+    line-height: 1.5;
+    font-style: italic;
 }
 
 .b_img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 .contact-details{
@@ -275,9 +281,9 @@ body{
         margin: 0 !important;
     }
 
-    .cn{
+    /*.cn{
         text-align: center;
-    }
+    }*/
 
     .navbar{
         padding: 50px 0 0 0;
@@ -304,6 +310,10 @@ body{
 
     .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item .dropdown-menu{
         text-align: center;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:last-child{
+        border-bottom: none;
     }
 
     .dropdown-menu{
@@ -345,14 +355,33 @@ body{
     }
 
     .photo{
-        margin: 4px;
-        height: 110px;
+       width: 350px;
+       height: 350px;
+    }
+
+
+    /*.............. About Page ............*/
+
+    .about{
+        margin-left: 0;
+    }
+
+    .b_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     /*................ Carousel ...............*/
 
     .carousel-inner .carousel-item img {
         height: auto;
+    }
+
+    .slider{
+        margin-top: 70px;
     }
 
     /*............ Contact Us .............*/
