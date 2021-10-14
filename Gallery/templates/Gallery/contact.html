@@ -1,0 +1,45 @@
+{% extends 'Gallery/base.html' %}
+
+{% load static %}
+
+{% load widget_tweaks %}
+
+{% block content %}
+    <div class="content-container">
+        <div class="contact">
+            <div class="contact-header">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="col-md-3 contact-banner">
+                <hr class="hr">
+                <img class="c_img" src="{% static 'Gallery/Image/contact-banner.jpg' %}">
+            </div>
+
+            <div class="col-md-6">
+                <form method="POST">
+                    {% csrf_token %}
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name<small class="sr">*</small></label>
+                        {% render_field form.name type="text" class="form-control" placeholder="required" autocomplete="off" %}
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email<small class="sr">*</small></label>
+                        {% render_field form.email type="email" class="form-control" placeholder="Someone@gmail.com" autocomplete="off" %}
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Phone<small class="sr">*</small></label>
+                        {% render_field form.phone type="number" class="form-control" placeholder="required" autocomplete="off" %}
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comments<small class="sr">*</small></label>
+                        {% render_field form.comment class="form-control" rows="5" placeholder="Write message" autocomplete="off" %}
+                    </div>
+                    <button type="submit" class="bn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

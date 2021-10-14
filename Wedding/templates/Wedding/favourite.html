@@ -1,0 +1,13 @@
+{% extends 'Gallery/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="content-container cn">
+	{% for f in fv %}
+		<div class="col-md-3 cl photo">
+			<a href="{% url 'photo' f.id %}"><img class="p_img" src="{{ f.image.url }}"></a>
+		</div>
+	{% endfor %}
+	</div>
+{% endblock %}

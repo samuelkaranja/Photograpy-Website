@@ -1,0 +1,437 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.rw{
+    margin: 0 !important;
+}
+
+.cl{
+    padding: 0 !important;
+}
+
+.cn{
+    text-align: center;
+}
+
+.content-container{
+    margin-top: 50px;
+}
+
+
+/*............. Vertical Navbar ..............*/
+
+.navbar.fixed-left {
+    position: fixed;
+    top: 40px;
+    left: 100px;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+.navbar.fixed-left .navbar-collapse {
+    flex-grow: 0;
+    flex-direction: column;
+    width: 100%
+}
+
+.navbar.fixed-left .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%
+}
+
+.navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
+    width: 100%
+}
+
+.navbar.fixed-left .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+    top: 0;
+}
+
+.navbar.fixed-left .navbar-nav .nav-item .dropdown-toggle:after {
+    border-top: .3em solid transparent;
+    border-left: .3em solid;
+    border-bottom: .3em solid transparent;
+    border-right: none;
+    vertical-align: baseline;
+}
+
+.navbar.fixed-left .navbar-nav .nav-item .dropdown-menu {
+    left: 100%;
+}
+
+.navbar{
+    text-align: center;
+    box-shadow: none !important;
+}
+
+.navbar-dark .navbar-brand{
+    color: #434343;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-dark .navbar-brand:hover{
+    color: #434343;
+    opacity: none;
+}
+
+.navbar-toggler{
+    background-color: forestgreen !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #414042 !important;
+    padding: 13px;
+    font-size: 14px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    background-color: lightgrey;
+}
+
+.nv-link{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link i{
+    padding: 0;
+    margin: 0;
+}
+
+.bd-h{
+    display: none;
+}
+
+.bd{
+    display: none;
+}
+
+/*.............. Gallery .............*/
+
+.photo{
+    display: inline-block;
+    margin: 7px 5px;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+}
+
+.photo:hover{
+    opacity: 0.6;
+}
+
+.p_img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/*................ Image ............*/
+
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.carousel-inner .carousel-item img{
+    width: auto;
+    height: 100vh;
+    object-fit: contain;
+    object-position: 50% 50%;
+    margin: auto;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background: none !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 60px;
+    height: 40px;
+}
+   
+
+/*................ About ..............*/
+
+.about{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.about-header{
+    margin-left: 15px;
+}
+
+.about h3{
+    color: #a7a9ab;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about p{
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.b_img{
+    width: 350px;
+    height: 350px;
+}
+
+.contact-details{
+    display: inline-block;
+}
+
+/*............... Contact Us ..............*/
+
+.hr{
+    border-top: 1px solid #a7a9ab;
+    width: 100%;
+    margin-right: 100px;
+}
+
+.contact{
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.contact-header{
+    margin-left: 15px;
+}
+
+.contact-header h2{
+    color: #a7a9ab;
+    font-weight: 600;
+}
+
+.contact-banner{
+    max-width: 900px;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.c_img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.sr{
+    color: red;
+    font-weight : 600;
+    padding-left: 3px;
+}
+
+.form-control{
+    box-shadow: none !important;
+}
+
+.contact label{
+    font-size: 16px;
+    font-weight: 350;
+    color: #414042;
+}
+
+.contact ::placeholder{
+    color: #aaa;
+}
+
+.contact .bn{
+    border: none;
+    color: #fff;
+    background-color: #68b12f;
+    padding: 5px 30px;
+    border-radius: 4px;
+}
+
+/*.............. Media Queries ..............*/
+
+@media only screen and (max-width: 425px) {
+
+    .rw{
+        margin: 0 !important;
+    }
+
+    .cn{
+        text-align: center;
+    }
+
+    .navbar{
+        padding: 50px 0 0 0;
+    }
+
+    .navbar.fixed-left{
+        top: 0 !important;
+        width: auto;
+        position: sticky;
+        margin-left: 0;
+    }
+
+    .navbar-toggler{
+        float: right;
+        font-size: 15px;
+        padding: 5px 10px;
+        background-color: transparent;
+    }
+
+    .navbar-dark .navbar-nav .nav-link{
+        border-bottom: 1px solid lightgrey;
+        padding: 25px; 
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item .dropdown-menu{
+        text-align: center;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:last-child{
+        border-bottom: none;
+    }
+
+    .dropdown-menu{
+        box-shadow: none;
+    }
+
+    .dropdown-item{
+        padding: 20px;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .nav-li {
+        display: none;
+    }
+
+    .bd{
+        width: 100%;
+        padding: 15px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .bd-h{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 2px;
+        padding-left: 40px;
+        margin: 0;
+    }
+
+    /*.............. Gallery ................*/
+
+    .content-container{
+        margin-top: 10px;
+    }
+
+    .photo{
+       width: 350px;
+       height: 350px;
+    }
+
+
+    /*.............. About Page ............*/
+
+    .about{
+        margin-left: 0;
+    }
+
+    .b_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    /*................ Carousel ...............*/
+
+    .carousel-inner .carousel-item img {
+        height: auto;
+    }
+
+    .slider{
+        margin-top: 70px;
+    }
+
+    /*............ Contact Us .............*/
+
+    .contact{
+        margin-left: 0;
+    }
+
+    .contact-banner{
+        max-width: 700px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .navbar.fixed-left {
+        left: 10px;
+    }
+
+    .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+        display: block;
+    }
+
+    .dropdown-menu{
+        margin-top: 0;
+    }
+
+    .dropdown-menu .dropdown-item{
+        color: #000000;
+    }
+
+    .dropdown-item:hover{
+        background-color: lightgrey;
+    }
+
+    .dropdown-toggle{
+        margin-bottom: 2px;
+    }
+
+    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+        margin-bottom: 0;
+    }
+
+    /*............ Gallery ............*/
+
+    .photo {
+        width: 150px; 
+        height: 150px;
+    }
+  }
