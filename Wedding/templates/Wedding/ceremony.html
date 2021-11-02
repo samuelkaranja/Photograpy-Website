@@ -6,7 +6,7 @@
     <div class="content-container cn">
 	{% for c in cr %}
 		<div class="col-md-3 cl photo">
-			<a href="{% url 'photo' %}"><img class="p_img" src="{{ c.image.url }}"></a>
+			<a href="{% url 'photo' c.pk %}"><img class="p_img" src="{{ c.image.url }}"></a>
 		</div>
 	{% endfor %}
 	</div>
